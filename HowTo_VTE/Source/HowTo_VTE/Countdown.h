@@ -24,6 +24,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
+	//How long, in seconds, the countdown will run
+	UPROPERTY(EditAnywhere)
 	int32 CountdownTime;
 
 	UTextRenderComponent *CountdownText;
