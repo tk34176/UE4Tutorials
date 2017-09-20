@@ -1,3 +1,0 @@
-C:\Users\Saggitori\Documents\ue4tutorials\HowTo_VTE\Source\HowTo_VTE\HowTo_VTE.Build.cs
-C:\Users\Saggitori\Documents\ue4tutorials\HowTo_VTE\Source\HowTo_VTE.Target.cs
-C:\Users\Saggitori\Documents\ue4tutorials\HowTo_VTE\Source\HowTo_VTEEditor.Target.cs
