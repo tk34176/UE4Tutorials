@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\HowTo_VTE.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{99EB2EB3-4467-4B20-9CF8-DC52761E3690}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\HowTo_VTE.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\HowTo_VTEEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{A73C8DF4-8004-4AB6-BDB0-0EB5D12B2941}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\HowTo_VTE">
+			<UniqueIdentifier>{E0DDB500-034E-4DD1-913F-3F7337844D21}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\HowTo_VTE\Countdown.cpp">
+			<Filter>Source\HowTo_VTE</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\HowTo_VTE\Countdown.h">
+			<Filter>Source\HowTo_VTE</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\HowTo_VTE\HowTo_VTE.Build.cs">
+			<Filter>Source\HowTo_VTE</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\HowTo_VTE\HowTo_VTE.cpp">
+			<Filter>Source\HowTo_VTE</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\HowTo_VTE\HowTo_VTE.h">
+			<Filter>Source\HowTo_VTE</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\HowTo_VTE\HowTo_VTEGameModeBase.cpp">
+			<Filter>Source\HowTo_VTE</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\HowTo_VTE\HowTo_VTEGameModeBase.h">
+			<Filter>Source\HowTo_VTE</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
