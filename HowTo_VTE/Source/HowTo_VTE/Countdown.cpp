@@ -1,6 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Countdown.h"
+#include "Classes/Components/TextRenderComponent.h"
+#include "Public/TimerManager.h"
 
 
 // Sets default values
@@ -9,13 +11,14 @@ ACountdown::ACountdown()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 
-	CountdownText = CreateDefaultSubobject<UTextRenderComponent>(TEXT("CountDownNumber"));
-	CountdownText->SetHorizontalAlignment(EHTA_CENTER);
+
+
+	CountdownText = CreateDefaultSubobject<UTextRenderComponent>(TEXT("CountdownNumber"));
+	CountdownText->SetHorizontalAlignment(EHTA_Center);
 	CountdownText->SetWorldSize(150.0f);
 	RootComponent = CountdownText;
 
 	CountdownTime = 3;
-
 }
 
 void ACountdown::UpdateTimerDisplay()
@@ -27,7 +30,7 @@ void ACountdown::AdvanceTimer()
 {
 	--CountdownTime;
 	UpdateTimerDisplay();
-	if (Countdown < 1)
+	if (CountdownTime < 1)
 	{
 		//We're done countding down, so stop running the timer.
 		GetWorldTimerManager().ClearTimer(CountdownTimerHandle);
@@ -38,7 +41,7 @@ void ACountdown::AdvanceTimer()
 void ACountdown::CountdownHasFinished()
 {
 	//Change to a special readout
-	CountdownHasFinished->SetText(TEXT("GO!"));
+	CountdownText->SetText(TEXT("GO!"));
 }
 
 // Called when the game starts or when spawned

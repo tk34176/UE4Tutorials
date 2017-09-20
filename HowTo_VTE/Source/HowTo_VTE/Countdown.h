@@ -33,8 +33,5 @@ public:
 	void AdvanceTimer();
 	void CountdownHasFinished();
 
-	FTimerHandle CountdownTimerHandle;
-
-
-	
+	FTimerHandle CountdownTimerHandle;	
 };
