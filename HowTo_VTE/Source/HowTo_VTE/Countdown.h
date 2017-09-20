@@ -34,7 +34,10 @@ public:
 	void UpdateTimerDisplay();
 
 	void AdvanceTimer();
+
+	UFUNCTION(BlueprintNativeEvent)
 	void CountdownHasFinished();
+	virtual void CountdownHasFinished_Implementation();
 
 	FTimerHandle CountdownTimerHandle;	
 };

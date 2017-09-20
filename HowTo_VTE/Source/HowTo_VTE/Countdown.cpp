@@ -34,11 +34,11 @@ void ACountdown::AdvanceTimer()
 	{
 		//We're done countding down, so stop running the timer.
 		GetWorldTimerManager().ClearTimer(CountdownTimerHandle);
-		CountdownHasFinished();
+		CountdownHasFinished_Implementation();
 	}
 }
 
-void ACountdown::CountdownHasFinished()
+void ACountdown::CountdownHasFinished_Implementation()
 {
 	//Change to a special readout
 	CountdownText->SetText(TEXT("GO!"));
