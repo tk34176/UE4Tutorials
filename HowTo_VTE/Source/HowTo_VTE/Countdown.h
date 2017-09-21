@@ -12,8 +12,8 @@ UCLASS()
 class HOWTO_VTE_API ACountdown : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	ACountdown();
 
@@ -21,15 +21,15 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-	
+	virtual void Tick(float DeltaSeconds) override;
+
 	//How long, in seconds, the countdown will run
 	UPROPERTY(EditAnywhere)
-	int32 CountdownTime;
+		int32 CountdownTime;
 
-	UTextRenderComponent *CountdownText;
+	UTextRenderComponent* CountdownText;
 
 	void UpdateTimerDisplay();
 
@@ -39,5 +39,5 @@ public:
 	void CountdownHasFinished();
 	virtual void CountdownHasFinished_Implementation();
 
-	FTimerHandle CountdownTimerHandle;	
+	FTimerHandle CountdownTimerHandle;
 };
